@@ -1,0 +1,6 @@
+Logo - "https://meetmighty.com/wp-themes/cargoton/wp-content/themes/cargoton-theme/assets/images/logo.png"
+
+
+Font:
+Barlow sans-serif
+Akshar
