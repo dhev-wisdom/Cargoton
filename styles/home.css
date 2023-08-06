@@ -459,7 +459,7 @@ footer {
     position: relative;
 }
 .footer-append-header {
-    font-size: 1.3em;
+    font-size: 1.1em;
     color: var(--yellow);
     text-transform: uppercase;
     letter-spacing: 5px;
