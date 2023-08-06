@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0
+}
+
+/* General */
+header {
+    height: 70vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--white);
+}
+
+/* Reuseable */
+.team-list {
+    list-style: none;
+    /* margin-top: 10px;
+    margin-bottom: 10px; */
+}
+.team-list li {
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.team-list li::before {
+    content: '•';
+    font-size: 2rem;
+    color: var(--yellow);
+    font-weight: 600;
+    display: inline-block;
+	margin-right: 10px;
+    /* margin-top: 10px; */
+}
