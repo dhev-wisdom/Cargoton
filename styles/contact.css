@@ -1,0 +1,11 @@
+.card_ {
+    background-color: var(--theme-white);
+    padding: 2.5rem 4rem;
+}
+
+@media screen and (max-width: 768px) {
+    .label_ {
+        font-size: 1.1rem;
+    }
+    
+}

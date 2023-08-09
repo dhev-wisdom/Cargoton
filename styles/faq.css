@@ -1,0 +1,12 @@
+.accordion-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.accordion_body {
+    background-color: var(--theme-black);
+    padding: 0.5rem 2rem;
+}
+.accordion_ {
+    background-color: rgb(253, 247, 241);
+    padding: 1.9rem 1.6rem;
+}
