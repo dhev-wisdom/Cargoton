@@ -117,7 +117,7 @@ select {
 .header-text {
     opacity: 0;
     transform: translateX(-100%);
-    transition: opacity 1s, transform 1s;
+    transition: opacity 2s, transform 2s;
 }
 .header-text-visible {
     opacity: 1;

@@ -25,8 +25,7 @@ $(document).ready(() => {
       }
     });
   
-    $(window).on("load", () => {
-      headerText.addClass("header-text-visible");
-    });
+    headerText.addClass("header-text-visible");
+    
   });
   
