@@ -29,6 +29,10 @@ header {
     width: 100vw;
     background-color: black;
     position: relative;
+    background-image: url("../images/quote_images/circle-use.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
 }
 a {
     text-decoration: none;

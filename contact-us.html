@@ -15,11 +15,17 @@
     <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body>
+  <div class="animation-container">
+    <div class="logo-animation">
+        <img src="images/home_images/cargo_logo.png" alt="Logo">
+    </div>
+  </div>
+  <div class="page-contents">
   <nav class="navbar navbar-expand-lg bg-white px-2 px-md-0 fixed-top">
     <div class="container">
       <a class="navbar-brand" href="cargo.html"><img src="images/home_images/cargo_logo.png" alt="CargoTon Logo" /></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+        <img src="images/nav_images/hamburger.png">
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -94,7 +100,7 @@
         <h2 class="yellow-without small-heading"><a href="cargo.html" class="yellow-color">Home</a> / Contact Us </h2>
       </header>
 
-      <section class="margin-y p-x-custom d-flex-column">
+      <section class="margin-y p-x-custom d-flex-column-x-btw">
         <h2 class="append-head-smaller">Contact us</h2>
         <h1 class="head mb-5">Let us <span class="yellow-color">Meet</span></h1>
         <div class="row g-5">
@@ -181,51 +187,54 @@
       </div>
   </section>
 
-      <footer class="margin-t pd-t bg-dark text-white">
-        <div class="row p-x-custom pd-b">
-            <div class="col-md-3 my-auto">
-                <!-- <img src="images/home_images/cargo_logo.png" class="text-white" alt="CargoTon Logo"> -->
-                <h1 class="display-3">CargoTon</h1>
-            </div>
-            <div class="col-md-3 my-4 my-md-0">
-                <h2 class="footer-append-header">Company</h2>
-                <ul class="footer-list">
-                    <li>About Us</li>
-                    <li>Contact Us</li>
-                    <li>Career</li>
-                    <li>FAQ</li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="footer-append-header">Services</h2>
-                <ul class="footer-list">
-                    <li>Air Freight</li>
-                    <li>Drone Freight</li>
-                    <li>Ground Freight</li>
-                    <li>Project Logistics</li>
-                </ul>
-            </div>
-            <div class="col-md-3 my-4 my-md-0">
-                <h2 class="footer-append-header">Get In Touch</h2>
-                <div class="my-4 barlow">
-                    <p class="my-0">Need Help?</p>
-                    <p class="my-0 footer-yellow">(406) 555-0120</p>
-                </div>
-                <div class="barlow">
-                    <p class="my-0">Email us at</p>
-                    <p class="footer-yellow">support@example.email</p>
-                </div>
-            </div>
-        </div>
-        <hr class="my-0" />
-        <div class="text-center py-3">
-            <small class="copyright">&copy; 2022 CargoTon. All Rights Reserved.</small>
-        </div>
-    </footer>
+    <footer class="margin-t pd-t bg-dark text-white">
+      <div class="row p-x-custom pd-b">
+          <div class="col-md-3 my-auto">
+              <h1 class="display-3">CargoTon</h1>
+          </div>
+          <div class="col-md-3 my-4 my-md-0">
+              <h2 class="footer-append-header">Company</h2>
+              <ul class="footer-list">
+                  <li>About Us</li>
+                  <li>Contact Us</li>
+                  <li>Career</li>
+                  <li>FAQ</li>
+              </ul>
+          </div>
+          <div class="col-md-3">
+              <h2 class="footer-append-header">Services</h2>
+              <ul class="footer-list">
+                  <li>Air Freight</li>
+                  <li>Drone Freight</li>
+                  <li>Ground Freight</li>
+                  <li>Project Logistics</li>
+              </ul>
+          </div>
+          <div class="col-md-3 my-4 my-md-0">
+              <h2 class="footer-append-header">Get In Touch</h2>
+              <div class="my-4 barlow">
+                  <p class="my-0">Need Help?</p>
+                  <p class="my-0 footer-yellow">(406) 555-0120</p>
+              </div>
+              <div class="barlow">
+                  <p class="my-0">Email us at</p>
+                  <p class="footer-yellow">support@example.email</p>
+              </div>
+          </div>
+      </div>
+      <hr class="my-0" />
+      <div class="text-center py-3">
+          <small class="copyright">&copy; 2022 CargoTon. All Rights Reserved.</small>
+      </div>
+  </footer>
+  <div class="scroll-to-top">
+    <i class="bi bi-arrow-up-circle-fill yellow-color scroll-icon"></i>
+  </div>
+  </div>
 
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-
+      <script src="main.js"></script>
 
 </body>
 </html>

@@ -46,6 +46,71 @@ body {
     position: absolute;
     font-family: 'Akshar', sans-serif;
 }
+.animation-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeOutAnimation 2s ease-in-out forwards;
+  }
+  
+  @keyframes fadeOutAnimation {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+  
+  .logo-animation {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: moveLogo 5s linear infinite; /* Animation properties */
+  }
+  
+  /* @keyframes moveLogo {
+    0%, 100% {
+      transform: translate(-50%, -50%);
+    }
+    25% {
+      transform: translate(calc(-50% + 30px), -50%);
+    }
+    50% {
+      transform: translate(calc(-50% + 30px), calc(-50% + 30px));
+    }
+    75% {
+      transform: translate(-50%, calc(-50% + 30px));
+    }
+  } */
+
+  @keyframes moveLogo {
+    0%, 100% {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+      transform: translate(calc(-50% + 30px), -50%) rotate(90deg);
+    }
+    50% {
+      transform: translate(calc(-50% + 30px), calc(-50% + 30px)) rotate(180deg);
+    }
+    75% {
+      transform: translate(-50%, calc(-50% + 30px)) rotate(270deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotate(360deg);
+    }
+  }
+  
 header {
     height: calc(100vh - 50px);
     position: relative;
@@ -66,6 +131,10 @@ img {
 select {
     font-size: 1.3rem;
 }
+.hidden-navbar {
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+}
 
 /* Re-useable */
 .nav-main-link {
@@ -83,33 +152,29 @@ select {
   }
   
 .hover-dropdown:hover .dropdown-menu {
-display: block;
-opacity: 1; /* Fade in */
-transform: translateY(0); /* Slide down */
+    display: block;
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide down */
 }
   .nav-sub-link-ul {
     padding: 10px 15px;
     width: 250px;
     list-style: none;
   }
-  
   .nav-sub-link-li {
     padding: 10px;
     background-color: var(--theme-white);
     margin-bottom: 10px;
     transition: background-color 0.5s, color 0.5s;
   }
-  
   .nav-sub-link-li:hover {
     background-color: var(--yellow);
   }
-  
   .nav-sub-link-li:hover .nav-sub-link {
     color: white;
     border-left: 4px solid white;
     padding-left: 6px;
   }
-  
   .nav-sub-link:hover {
     background-color: var(--yellow);
   }
@@ -126,7 +191,6 @@ transform: translateY(0); /* Slide down */
     padding-left: 10px;
     border-left: 4px solid transparent;
   }
-  
 .nav-link-home {
     font-size: 1rem;
     font-weight: 600;
@@ -207,6 +271,12 @@ transform: translateY(0); /* Slide down */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.d-flex-column-x-btw {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
 }
 .d-flex-column-left {
     display: flex;
@@ -358,7 +428,7 @@ transform: translateY(0); /* Slide down */
 .storeBtn {
     color: var(--white);
     background-color: black;
-    padding: 5px 3rem;
+    padding: 15px 3rem;
     border: none;
     font-size: 1.1rem;
     letter-spacing: 1.5px;
@@ -425,7 +495,6 @@ transform: translateY(0); /* Slide down */
 .freight-img {
     width: 60%;
     height: 60%;
-    /* margin-bottom: 3rem; */
 }
 .freight-img-div {
     position: relative;
@@ -498,7 +567,7 @@ transform: translateY(0); /* Slide down */
     border: none;
 }
 .phone {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     color: #FFF;
 }
 .inc-font {
@@ -634,11 +703,9 @@ transform: translateY(0); /* Slide down */
     text-decoration: none;
     color: black;
     font-weight: 500;
-
 }
 .read-more:hover {
     color: var(--yellow);
-    /* font-weight: 600; */
 }
 footer {
     position: relative;
@@ -754,7 +821,7 @@ small .copyright {
     width: 100%;
 }
 #section-5 {
-    background-image: url("../images/home_images/map-04.jpeg");
+    background-image: url("../images/home_images/map07.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -776,8 +843,35 @@ small .copyright {
 .acheive-child:last-child {
     margin-right: 0;
 }
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    color: var(--theme-yellow);
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0s linear 0.3s;
+  }
+  .scroll-icon {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  .scroll-to-top.active {
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s ease, visibility 0s linear;
+  }
+  
 
 @media screen and (max-width: 768px) {
+    .scroll-icon {
+        font-size: 1.8rem;
+      }
     .achivement-flex {
         display: flex;
         flex-direction: column;
@@ -785,6 +879,9 @@ small .copyright {
     }
     .acheive-child1 {
         flex-grow: 1;
+        margin-right: 0;
+    }
+    .acheive-child {
         margin-right: 0;
     }
     .append-paragraph {
@@ -850,12 +947,12 @@ small .copyright {
         font-size: 2.5rem;
     }
     .inner-heading {
-        font-size: 1.3rem;
-        letter-spacing: 1.2px;
+        font-size: 1.2rem;
+        letter-spacing: 1.1px;
         font-weight: 500;
     }
     .img-reduce {
-        width: 90%;
+        width: 100%;
     }
     .mybtn {
         padding: 0.8rem 2.5rem;
@@ -865,7 +962,7 @@ small .copyright {
     .storeBtn {
         color: var(--white);
         background-color: black;
-        padding: 0 1rem;
+        padding: 10px 1rem;
         font-size: .9rem;
         letter-spacing: 1.2px;
     }
@@ -898,7 +995,7 @@ small .copyright {
         padding-left: 13px;
     }
     .big-freight-img {
-        width: 90%;
+        width: 98%;
         margin: 0 auto;
         text-align: center;
         overflow-x: hidden;
@@ -938,18 +1035,18 @@ small .copyright {
         padding-right: 1.5rem
     }
     .margin-y {
-        margin-top: 4rem;
-        margin-bottom: 4rem;
-    }
-    .margin-t {
-        margin-top: 4rem;
-    }
-    .margin-b {
-        margin-bottom: 4rem;
-    }
-    .margin-y-big {
         margin-top: 6rem;
         margin-bottom: 6rem;
+    }
+    .margin-t {
+        margin-top: 6rem;
+    }
+    .margin-b {
+        margin-bottom: 6rem;
+    }
+    .margin-y-big {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
     }
     .d-flex-column-left {
         display: flex;
