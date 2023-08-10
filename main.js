@@ -13,19 +13,6 @@ $(document).ready(() => {
       e.stopPropagation();
     });
   
-    let lastScroll = 0;
-    $(window).on("scroll", () => {
-      const currentScroll = $(window).scrollTop();
-  
-      if (currentScroll > lastScroll) {
-        $(".navbar").addClass("hidden-navbar");
-      } else {
-        $(".navbar").removeClass("hidden-navbar");
-      }
-  
-      lastScroll = currentScroll;
-    });
-  
     scrollToTopButton.on("click", () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     });

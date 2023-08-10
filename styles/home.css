@@ -59,7 +59,6 @@ body {
     align-items: center;
     animation: fadeOutAnimation 2s ease-in-out forwards;
   }
-  
   @keyframes fadeOutAnimation {
     0% {
       opacity: 1;
@@ -69,15 +68,13 @@ body {
       pointer-events: none;
     }
   }
-  
   .logo-animation {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: moveLogo 5s linear infinite; /* Animation properties */
+    animation: moveLogo 6s linear infinite;
   }
-  
   @keyframes moveLogo {
     0%, 100% {
       transform: translate(-50%, -50%);
@@ -92,24 +89,6 @@ body {
       transform: translate(-50%, calc(-50% + 30px));
     }
   }
-
-  /* @keyframes moveLogo {
-    0%, 100% {
-      transform: translate(-50%, -50%) rotate(0deg);
-    }
-    25% {
-      transform: translate(calc(-50% + 30px), -50%) rotate(90deg);
-    }
-    50% {
-      transform: translate(calc(-50% + 30px), calc(-50% + 30px)) rotate(180deg);
-    }
-    75% {
-      transform: translate(-50%, calc(-50% + 30px)) rotate(270deg);
-    }
-    100% {
-      transform: translate(-50%, -50%) rotate(360deg);
-    }
-  } */
   
 header {
     height: calc(100vh - 50px);
@@ -138,15 +117,12 @@ select {
 .header-text {
     opacity: 0;
     transform: translateX(-100%);
-    transition: opacity 3s, transform 3s;
+    transition: opacity 1s, transform 1s;
 }
-
 .header-text-visible {
     opacity: 1;
     transform: translateX(0);
 }
-
-
 
 /* Re-useable */
 .nav-main-link {
@@ -160,13 +136,13 @@ select {
 .hover-dropdown .dropdown-menu {
     opacity: 0;
     transform: translateY(-10px);
-    transition: opacity 0.3s ease, transform 0.3s ease; /* Add transitions */
+    transition: opacity 0.3s ease, transform 0.3s ease;
   }
   
 .hover-dropdown:hover .dropdown-menu {
     display: block;
-    opacity: 1; /* Fade in */
-    transform: translateY(0); /* Slide down */
+    opacity: 1;
+    transform: translateY(0);
 }
   .nav-sub-link-ul {
     padding: 10px 15px;
@@ -1106,6 +1082,5 @@ small .copyright {
     }
     #section-2, #section-3 {
         overflow-x: hidden;
-    }
-    
+    }  
 }
