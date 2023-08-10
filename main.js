@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
     setTimeout(function () {
       animationContainer.remove();
       pageContents.style.visibility = "visible";
-    }, 5000); // 5 seconds delay
+    }, 5000);
   });
 
 $(document).ready(function () {
@@ -34,9 +34,21 @@ $(document).ready(function () {
 
         lastScroll = currentScroll;
       });
+
+
+      let scrollToTopButton = document.querySelector(".scroll-to-top");
+    scrollToTopButton.addEventListener("click", function () {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+    window.addEventListener("scroll", function () {
+    if (window.scrollY > 300) {
+        scrollToTopButton.classList.add("active");
+    } else {
+        scrollToTopButton.classList.remove("active");
+    }
+});
   });
 
-  // Scroll to top button
 var scrollToTopButton = document.querySelector(".scroll-to-top");
 scrollToTopButton.addEventListener("click", function () {
   window.scrollTo({ top: 0, behavior: "smooth" });

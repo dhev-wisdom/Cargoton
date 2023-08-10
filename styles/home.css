@@ -78,7 +78,7 @@ body {
     animation: moveLogo 5s linear infinite; /* Animation properties */
   }
   
-  /* @keyframes moveLogo {
+  @keyframes moveLogo {
     0%, 100% {
       transform: translate(-50%, -50%);
     }
@@ -91,9 +91,9 @@ body {
     75% {
       transform: translate(-50%, calc(-50% + 30px));
     }
-  } */
+  }
 
-  @keyframes moveLogo {
+  /* @keyframes moveLogo {
     0%, 100% {
       transform: translate(-50%, -50%) rotate(0deg);
     }
@@ -109,7 +109,7 @@ body {
     100% {
       transform: translate(-50%, -50%) rotate(360deg);
     }
-  }
+  } */
   
 header {
     height: calc(100vh - 50px);
@@ -137,6 +137,10 @@ select {
 }
 
 /* Re-useable */
+.hidden-image {
+    display: none;
+}
+
 .nav-main-link {
     font-size: 1rem;
     font-weight: 600;
