@@ -1,11 +1,30 @@
 .card_ {
     background-color: var(--theme-white);
     padding: 2.5rem 4rem;
+    flex: 1;
 }
 
-@media screen and (max-width: 768px) {
-    .label_ {
-        font-size: 1.1rem;
-    }
-    
+#section-2 {
+    background-image: url("../images/home_images/map07.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow-x: hidden;
 }
+
+.d-flex_ {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    overflow-x: hidden;
+}
+    @media screen and (max-width: 768px) {
+        .label_ {
+            font-size: 1.1rem;
+        }
+        .d-flex_ {
+            display: flex;
+            flex-direction: column;
+            column-gap: 1.5rem;
+        }
+    }

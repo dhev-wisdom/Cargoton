@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="./styles/quote.css">
     <link rel="stylesheet" href="./styles/contact.css">
 </head>
-<body>
+<body style="overflow-x: hidden;">
   <div class="animation-container">
     <div class="logo-animation">
         <img src="images/home_images/cargo_logo.png" alt="Logo">
@@ -30,13 +30,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item dropdown hover-dropdown">
-            <a class="nav-link dropdown-toggle nav-link-home mb-3 mb-md-0 me-md-3" href="#" role="button">
+            <a class="nav-link dropdown-toggle nav-link-home mb-3 mb-md-0 me-md-3" href="cargo.html" role="button">
               Home
             </a>
             <ul class="dropdown-menu nav-sub-link-ul">
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Main Home</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Home 2</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Home 3</a></li>
+              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="cargo.html">Main Home</a></li>
+              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="cargo.html">Home 2</a></li>
+              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="cargo.html">Home 3</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown hover-dropdown">
@@ -44,13 +44,13 @@
               Pages
             </a>
             <ul class="dropdown-menu nav-sub-link-ul">
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Request A Quote</a></li>
+              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="request-a-quote.html">Request A Quote</a></li>
               <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">About Us</a></li>
               <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Careers</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Our Team</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Contact Us</a></li>
+              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="our-team.html">Our Team</a></li>
+              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="contact-us.html">Contact Us</a></li>
               <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Our Clients</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">FAQ</a></li>
+              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="faq.html">FAQ</a></li>
             </ul>
           </li>
           <li class="nav-item">
@@ -100,22 +100,22 @@
         <h2 class="yellow-without small-heading"><a href="cargo.html" class="yellow-color">Home</a> / Contact Us </h2>
       </header>
 
-      <section class="margin-y p-x-custom d-flex-column-x-btw">
+      <section class="margin-y p-x-custom d-flex-column">
         <h2 class="append-head-smaller">Contact us</h2>
         <h1 class="head mb-5">Let us <span class="yellow-color">Meet</span></h1>
-        <div class="row g-5">
-            <div class="col-md-4 card_ d-flex-column text-center">
+        <div class="d-flex_">
+            <div class="card_ text-center">
                 <i class="bi bi-geo-alt-fill global-icon"></i>
                 <h4 class="yellow-without my-3">Address</h4>
                 <p class="paragraph">1234 North Avenue Luke Lane, South , IN 360001, United States</p>
             </div>
-            <div class="col-md-4 card_  d-flex-column">
+            <div class="card_ text-center">
                 <i class="bi bi-telephone-fill global-icon"></i>
                 <h4 class="yellow-without my-3">Phone</h4>
                 <p class="paragraph">(303) 555-0105<br />
                 (303) 555-0105</p>
             </div>
-            <div class="col-md-4 card_ d-flex-column">
+            <div class="card_ text-center">
                 <i class="bi bi-envelope-at-fill global-icon"></i>
                 <h4 class="yellow-without my-3">Email</h4>
                 <p class="paragraph">support@example.com<br />
@@ -124,8 +124,8 @@
         </div>
       </section>
 
-      <section class="pd-y-big p-x-custom margin-y bg-dark row">
-        <div class="col-md-5 bg-white px-3 px-md-5 py-5 text-center">
+      <section class="pd-y-big p-x-custom margin-y bg-dark row" id="section-2">
+        <div class="col-md-12 col-lg-5 bg-white px-3 px-md-5 py-5 text-center">
             <h3 class="mb-5"><span class="yellow-without">Ready?</span> Let's Get Connected.</h3>
             <form action="" class="row">
                 <div class="col-sm-12 form-floating mb-4">
@@ -154,7 +154,7 @@
                 </div>
             </form>
         </div>
-        <div class="col-md-7">
+        <div class="col-md-12 col-lg-7">
             <img src="" alt="">
         </div>
     </section>

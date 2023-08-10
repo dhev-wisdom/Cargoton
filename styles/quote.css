@@ -49,8 +49,8 @@ a:hover {
     background-color: var(--yellow);
 }
 .small-heading {
-    font-size: 1.05rem;
-    letter-spacing: 2.2px;
+    font-size: 1.1rem;
+    letter-spacing: 2.5px;
 }
 .pronounced {
     font-size: 3rem;
