@@ -76,10 +76,7 @@ body {
     padding: 2rem 3rem;
     text-align: center;
     transform: translate(-50%, -50%);
-    /* animation: moveLogo 6s linear infinite; */
-  }
-  .logo-animation img {
-    width: 50%;
+    animation: moveLogo 6s linear infinite;
   }
   @keyframes moveLogo {
     0%, 100% {
