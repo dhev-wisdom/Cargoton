@@ -253,11 +253,11 @@ select {
     justify-content: center;
     align-items: center;
 }
-/* .d-flex-x-around {
+.d-flex-x-around {
     display: flex;
     justify-content: space-around;
     align-items: center;
-} */
+}
 .d-flex-x-between {
     display: flex;
     justify-content: space-between;
@@ -769,9 +769,6 @@ small .copyright {
 .footer-yellow {
     color: var(--yellow);
 }
-.outline {
-    border: 1px solid red;
-}
 .team-container {
     position: relative;
     overflow: hidden;
@@ -1047,8 +1044,12 @@ small .copyright {
     .head {
         font-size: 2rem;
     }
+    #sect1-inner-div {
+        position: relative;
+    }
     ._box {
         padding: 5rem;
+        width: 100%;
     }
     .pd-y {
         padding-top: 3rem;

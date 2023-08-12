@@ -29,7 +29,7 @@ header {
     width: 100vw;
     background-color: black;
     position: relative;
-    background-image: url("../images/quote_images/circle_iii.jpg");
+    background-image: url("../images/quote_images/circle-use.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left left;
@@ -94,4 +94,10 @@ a:hover {
 }
 .quote-select:focus {
     border: none;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-image: url("../images/quote_images/circle_iii.jpg");
+    }
 }

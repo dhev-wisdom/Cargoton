@@ -4,6 +4,11 @@ $(document).ready(() => {
     const scrollToTopButton = $(".scroll-to-top");
     const headerText = $(".header-text");
     let counterTriggered = false;
+    let screen;
+    let change = false;
+
+    if ($(window).width() <= 768) screen = "small";
+    else screen = "big";
   
     setTimeout(() => {
       animationContainer.remove();
@@ -61,6 +66,53 @@ $(document).ready(() => {
       }, 300);
     }
     });
+    
+    if ($(window).width() <= 768) {
+      setupCardSlider();
+    }
+
+    $(window).resize(function() {
+      if ($(window).width() <= 768) {
+        if (screen === "small") change = false;
+        else change = true;
+        screen = "small";
+        if (change === true && screen === "small") setupCardSlider();
+      } else {
+        if (screen === "big") change = false;
+        else change = true;
+        screen = "big";
+        if (change === true && screen === "big") reverseSlideEffect();
+      }
+  });
+
+  function setupCardSlider() {
+    const carouselSection = $(".carousel-section");
+    const innerDiv = $("#sect1-inner-div");
+    const slideElement = $("._box");
+
+    innerDiv.removeClass("d-flex-x-around");
+    innerDiv.addClass("carousel-inner");
+    carouselSection.addClass("carousel slide");
+    carouselSection.attr("id", "carouselExampleSlidesOnly");
+    carouselSection.attr("data-bs-ride", "carousel");
+    slideElement.first().addClass("active");
+    slideElement.addClass("carousel-item");
+  }
+
+  function reverseSlideEffect() {
+    const carouselSection = $(".carousel-section");
+    const innerDiv = $("#sect1-inner-div");
+    const slideElement = $("._box");
+
+    innerDiv.addClass("d-flex-x-around");
+    innerDiv.removeClass("carousel-inner");
+    carouselSection.removeClass("carousel slide");
+    carouselSection.removeAttr("id");
+    carouselSection.removeAttr("data-bs-ride");
+    slideElement.first().removeClass("active");
+    slideElement.removeClass("carousel-item");
+  }
+  
 
   });
 
