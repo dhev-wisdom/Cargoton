@@ -1,240 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Barlow:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/home.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="icon" href="images/home_images/cargo_logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Barlow:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="./styles/home.css">
     <link rel="stylesheet" href="./styles/quote.css">
     <link rel="stylesheet" href="./styles/contact.css">
 </head>
 <body style="overflow-x: hidden;">
-  <div class="animation-container">
-    <div class="logo-animation">
-        <img src="images/home_images/cargo_logo.png" alt="Logo">
+    <div class="animation-container">
+        <div class="logo-animation">
+            <img src="images/home_images/loader.gif" alt="Logo">
+        </div>
     </div>
-  </div>
-  <div class="page-contents">
-  <nav class="navbar navbar-expand-lg bg-white px-2 px-md-0 fixed-top" style="overflow-x: hidden;">
-    <div class="container">
-      <a class="navbar-brand" href="cargo.html"><img src="images/home_images/cargo_logo.png" alt="CargoTon Logo" /></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <img src="images/nav_images/hamburger.png">
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item dropdown hover-dropdown">
-            <a class="nav-link dropdown-toggle nav-link-home mb-3 mb-md-0 me-md-3" href="cargo.html" role="button">
-              Home
-            </a>
-            <ul class="dropdown-menu nav-sub-link-ul">
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="cargo.html">Main Home</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="cargo.html">Home 2</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="cargo.html">Home 3</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown hover-dropdown">
-            <a class="nav-link dropdown-toggle nav-main-link mb-3 mb-md-0 me-md-3" href="#" role="button">
-              Pages
-            </a>
-            <ul class="dropdown-menu nav-sub-link-ul">
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="request-a-quote.html">Request A Quote</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">About Us</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Careers</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="our-team.html">Our Team</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="contact-us.html">Contact Us</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Our Clients</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="faq.html">FAQ</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-main-link mb-3 mb-md-0 me-md-3" aria-current="page" href="#">Tracking</a>
-          </li>
-          <li class="nav-item dropdown hover-dropdown">
-            <a class="nav-link dropdown-toggle nav-main-link mb-3 mb-md-0 me-md-3" href="#" role="button">
-              Services
-            </a>
-            <ul class="dropdown-menu nav-sub-link-ul">
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Courier Shipping</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Project Logistics</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Ware-Housing</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Drone Freight</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Track & Trace</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Ground Freight</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Sea Freight</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Air Freight</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown hover-dropdown">
-            <a class="nav-link dropdown-toggle nav-main-link mb-3 mb-md-0 me-md-3" href="#" role="button">
-              Blog
-            </a>
-            <ul class="dropdown-menu nav-sub-link-ul">
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Blog</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Two Column Blog</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Left Sidebar Grid 1</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Left Sidebar Grid 2</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Right Sidebar Grid 1</a></li>
-              <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Right Sidebar Grid 2</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-btn mb-3 mb-md-0 me-md-3" href="#">Get A Quote</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-btn-black" href="#">Sign In</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-      <header class="nav-margin header d-flex-column">
-        <h1 class="text-white pronounced mb-3">Contact Us</h1>
-        <h2 class="yellow-without small-heading"><a href="cargo.html" class="yellow-color">Home</a> / Contact Us </h2>
-      </header>
-
-      <section class="margin-y p-x-custom d-flex-column">
-        <h2 class="append-head-smaller">Contact us</h2>
-        <h1 class="head mb-5">Let us <span class="yellow-color">Meet</span></h1>
-        <div class="d-flex_">
-            <div class="card_ text-center">
-                <i class="bi bi-geo-alt-fill global-icon"></i>
-                <h4 class="yellow-without my-3">Address</h4>
-                <p class="paragraph">1234 North Avenue Luke Lane, South , IN 360001, United States</p>
+    <div class="page-contents">
+        <nav class="navbar navbar-expand-lg bg-white px-2 px-md-0 fixed-top">
+            <div class="container">
+              <a class="navbar-brand" href="cargo.html"><img src="images/home_images/cargo_logo.png" alt="CargoTon Logo" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="images/nav_images/hamburger.png">
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown hover-dropdown">
+                    <a class="nav-link dropdown-toggle nav-link-home mb-3 mb-lg-0 me-lg-3" href="" role="button">
+                      Home
+                    </a>
+                    <ul class="dropdown-menu nav-sub-link-ul">
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Main Home</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Home 2</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Home 3</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown hover-dropdown">
+                    <a class="nav-link dropdown-toggle nav-main-link mb-3 mb-lg-0 me-lg-3" href="#" role="button">
+                      Pages
+                    </a>
+                    <ul class="dropdown-menu nav-sub-link-ul">
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="request-a-quote.html">Request A Quote</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">About Us</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Careers</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="our-team.html">Our Team</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="contact-us.html">Contact Us</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Our Clients</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="faq.html">FAQ</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-main-link mb-3 mb-lg-0 me-lg-3" aria-current="page" href="#">Tracking</a>
+                  </li>
+                  <li class="nav-item dropdown hover-dropdown">
+                    <a class="nav-link dropdown-toggle nav-main-link mb-3 mb-lg-0 me-lg-3" href="#" role="button">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu nav-sub-link-ul">
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#section-2">Courier Shipping</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#section-2">Project Logistics</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#section-2">Ware-Housing</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#section-2">Drone Freight</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#section-2">Track & Trace</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#section-2">Ground Freight</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#section-2">Sea Freight</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#section-2">Air Freight</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown hover-dropdown">
+                    <a class="nav-link dropdown-toggle nav-main-link mb-3 mb-lg-0 me-lg-3" href="#" role="button">
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu nav-sub-link-ul">
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Blog</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Two Column Blog</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Left Sidebar Grid 1</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Left Sidebar Grid 2</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Right Sidebar Grid 1</a></li>
+                      <li class="nav-sub-link-li"><a class="dropdown-item nav-sub-link" href="#">Right Sidebar Grid 2</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-btn mb-3 mb-lg-0 me-lg-3" href="#">Get A Quote</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-btn-black" href="#">Sign In</a>
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="card_ text-center">
-                <i class="bi bi-telephone-fill global-icon"></i>
-                <h4 class="yellow-without my-3">Phone</h4>
-                <p class="paragraph">(303) 555-0105<br />
-                (303) 555-0105</p>
-            </div>
-            <div class="card_ text-center">
-                <i class="bi bi-envelope-at-fill global-icon"></i>
-                <h4 class="yellow-without my-3">Email</h4>
-                <p class="paragraph">support@example.com<br />
-                cargo.help@gmail.com</p>
-            </div>
-        </div>
-      </section>
+          </nav>
 
-      <section class="pd-y-big p-x-custom margin-y bg-dark row" id="section-2" style="overflow-x: hidden;">
-        <div class="col-md-12 col-lg-5 bg-white px-3 px-md-5 py-5 text-center">
-            <h3 class="mb-5"><span class="yellow-without">Ready?</span> Let's Get Connected.</h3>
-            <form action="" class="row">
-                <div class="col-sm-12 form-floating mb-4">
-                    <input type="text" id="name" class="form-control input-email barlow px-4"  placeholder="Name:">
-                    <label for="name" class="label_ ms-3">Name:</label>
+          <header class="nav-margin header d-flex-column">
+            <h1 class="text-white pronounced mb-3">Contact Us</h1>
+            <h2 class="yellow-without small-heading"><a href="cargo.html" class="yellow-color">Home</a> / Contact Us </h2>
+          </header>
+
+          <section class="margin-y p-x-custom d-flex-column">
+            <h2 class="append-head-smaller">Contact us</h2>
+            <h1 class="head mb-5">Let us <span class="yellow-color">Meet</span></h1>
+            <div class="d-flex_">
+                <div class="card_ text-center">
+                    <i class="bi bi-geo-alt-fill global-icon"></i>
+                    <h4 class="yellow-without my-3">Address</h4>
+                    <p class="paragraph">1234 North Avenue Luke Lane, South , IN 360001, United States</p>
                 </div>
-                <div class="col-sm-12 form-floating mb-4">
-                    <input type="text" id="email" class="form-control input-email barlow px-4"  placeholder="Email ID">
-                    <label for="email" class="label_ ms-3">Email ID:</label>
+                <div class="card_ text-center">
+                    <i class="bi bi-telephone-fill global-icon"></i>
+                    <h4 class="yellow-without my-3">Phone</h4>
+                    <p class="paragraph">(303) 555-0105<br />
+                    (303) 555-0105</p>
                 </div>
-                <div class="col-sm-12 form-floating mb-4">
-                    <input type="number" id="contact" class="form-control input-email barlow px-4"  placeholder="Contact No:">
-                    <label for="contact" class="label_ ms-3">Contact No:</label>
+                <div class="card_ text-center">
+                    <i class="bi bi-envelope-at-fill global-icon"></i>
+                    <h4 class="yellow-without my-3">Email</h4>
+                    <p class="paragraph">support@example.com<br />
+                    cargo.help@gmail.com</p>
                 </div>
-                <div class="col-sm-12 form-floating mb-4">
-                    <textarea name="additional" class="form-control input-email barlow px-4" id="add"
-                    placeholder="Enquiry Description:" style="height: 180px"></textarea>
-                    <label for="add" class="label_ ms-3">Enquiry Description:</label>
+            </div>
+        </section>
+
+        <section class="pd-y-big p-x-custom margin-t bg-dark row w-100" id="section-2" style="overflow-x: hidden;">
+            <div class="col-md-12 col-lg-5 bg-white px-3 px-md-5 py-5 text-center">
+                <h3 class="mb-5"><span class="yellow-without">Ready?</span> Let's Get Connected.</h3>
+                <form action="" class="row">
+                    <div class="col-sm-12 form-floating mb-4">
+                        <input type="text" id="name" class="form-control input-email barlow px-4"  placeholder="Name:">
+                        <label for="name" class="label_ ms-3">Name:</label>
+                    </div>
+                    <div class="col-sm-12 form-floating mb-4">
+                        <input type="text" id="email" class="form-control input-email barlow px-4"  placeholder="Email ID">
+                        <label for="email" class="label_ ms-3">Email ID:</label>
+                    </div>
+                    <div class="col-sm-12 form-floating mb-4">
+                        <input type="number" id="contact" class="form-control input-email barlow px-4"  placeholder="Contact No:">
+                        <label for="contact" class="label_ ms-3">Contact No:</label>
+                    </div>
+                    <div class="col-sm-12 form-floating mb-4">
+                        <textarea name="additional" class="form-control input-email barlow px-4" id="add"
+                        placeholder="Enquiry Description:" style="height: 180px"></textarea>
+                        <label for="add" class="label_ ms-3">Enquiry Description:</label>
+                    </div>
+                    <div class="col-sm-12 d-flex form-check mb-5">
+                        <input type="checkbox" id="agree" class="form-check-input"  placeholder="Delivery location:">
+                        <label for="agree" class="form-check-label ms-3 barlow">I agree to cargoTon's PrivacyPolicy</label>
+                    </div>
+                    <div class="text-center">
+                        <button class="mybtn-black">Send message</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-12 col-lg-7">
+            </div>
+        </section>
+
+        <section class="pd-y p-x-custom d-flex-x-around my-5 carousel slide"
+        id="carouselExampleSlidesOnly" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active _box text-center">
+                    <i class="bi bi-battery-charging express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">XPRESS</h2>
+                    <small class="small-italic negative-t-margin">Worldwide delivery.</small>
                 </div>
-                <div class="col-sm-12 d-flex form-check mb-5">
-                    <input type="checkbox" id="agree" class="form-check-input"  placeholder="Delivery location:">
-                    <label for="agree" class="form-check-label ms-3 barlow">I agree to cargoTon's PrivacyPolicy</label>
+                <div class="carousel-item _box text-center">
+                    <i class="bi bi-rocket-takeoff-fill express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">EXPRESS</h2>
+                    <small class="small-italic negative-t-margin">Choose the right way.</small>
                 </div>
-                <div class="text-center">
-                    <button class="mybtn-black">Send message</button>
+                <div class="carousel-item _box text-center">
+                    <i class="bi bi-airplane-engines-fill express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">QUICKAIR</h2>
+                    <small class="small-italic negative-t-margin">Worldwide delivery.</small>
                 </div>
-            </form>
-        </div>
-        <div class="col-md-12 col-lg-7">
-            <img src="" alt="">
-        </div>
+                <div class="carousel-item _box text-center">
+                    <i class="bi bi-truck express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">Express</h2>
+                    <small class="small-italic negative-t-margin">Choose the right way.</small>
+                </div>
+                <div class="carousel-item _box text-center">
+                    <i class="bi bi-house-check-fill express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">express</h2>
+                    <small class="small-italic negative-t-margin">delivery.</small>
+                </div>
+            </div>
     </section>
 
-    <section class="margin-b pd-y p-x-custom d-flex-x-around mb-5">
-      <div class="text-center p-5">
-          <span></span>
-          <h2 class="yellow-color mb-0 barlow fw-bold">XPRESS</h2>
-          <small class="small-italic negative-t-margin">Worldwide delivery.</small>
-      </div>
-      <div class="text-center p-5">
-          <span></span>
-          <h2 class="yellow-color mb-0 barlow fw-bold">EXPRESS</h2>
-          <small class="small-italic negative-t-margin">Choose the right way.</small>
-      </div>
-      <div class="text-center p-5">
-          <span></span>
-          <h2 class="yellow-color mb-0 barlow fw-bold">QUICKAIR</h2>
-          <small class="small-italic negative-t-margin">Worldwide delivery.</small>
-      </div>
-      <div class="text-center p-5">
-          <span></span>
-          <h2 class="yellow-color mb-0 barlow fw-bold">Express</h2>
-          <small class="small-italic negative-t-margin">Choose the right way.</small>
-      </div>
-      <div class="text-center p-5">
-          <span></span>
-          <h2 class="yellow-color mb-0 barlow fw-bold">express</h2>
-          <small class="small-italic negative-t-margin">delivery.</small>
-      </div>
-  </section>
+          <footer class="mt-5 pd-t bg-dark text-white">
+            <div class="row p-x-custom pd-b">
+                <div class="col-md-3 my-auto">
+                    <h1 class="display-3">CargoTon</h1>
+                </div>
+                <div class="col-md-3 my-4 my-md-0">
+                    <h2 class="footer-append-header">Company</h2>
+                    <ul class="footer-list">
+                        <li>About Us</li>
+                        <li>Contact Us</li>
+                        <li>Career</li>
+                        <li>FAQ</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h2 class="footer-append-header">Services</h2>
+                    <ul class="footer-list">
+                        <li>Air Freight</li>
+                        <li>Drone Freight</li>
+                        <li>Ground Freight</li>
+                        <li>Project Logistics</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 my-4 my-md-0">
+                    <h2 class="footer-append-header">Get In Touch</h2>
+                    <div class="my-4 barlow">
+                        <p class="my-0">Need Help?</p>
+                        <p class="my-0 footer-yellow">(406) 555-0120</p>
+                    </div>
+                    <div class="barlow">
+                        <p class="my-0">Email us at</p>
+                        <p class="footer-yellow">support@example.email</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-0" />
+            <div class="text-center py-3">
+                <small class="copyright">&copy; 2022 CargoTon. All Rights Reserved.</small>
+            </div>
+        </footer>
+        <div class="scroll-to-top">
+            <i class="bi bi-arrow-up-circle-fill yellow-color scroll-icon"></i>
+        </div>
+    </div>
+    
 
-    <footer class="margin-t pd-t bg-dark text-white">
-      <div class="row p-x-custom pd-b">
-          <div class="col-md-3 my-auto">
-              <h1 class="display-3">CargoTon</h1>
-          </div>
-          <div class="col-md-3 my-4 my-md-0">
-              <h2 class="footer-append-header">Company</h2>
-              <ul class="footer-list">
-                  <li>About Us</li>
-                  <li>Contact Us</li>
-                  <li>Career</li>
-                  <li>FAQ</li>
-              </ul>
-          </div>
-          <div class="col-md-3">
-              <h2 class="footer-append-header">Services</h2>
-              <ul class="footer-list">
-                  <li>Air Freight</li>
-                  <li>Drone Freight</li>
-                  <li>Ground Freight</li>
-                  <li>Project Logistics</li>
-              </ul>
-          </div>
-          <div class="col-md-3 my-4 my-md-0">
-              <h2 class="footer-append-header">Get In Touch</h2>
-              <div class="my-4 barlow">
-                  <p class="my-0">Need Help?</p>
-                  <p class="my-0 footer-yellow">(406) 555-0120</p>
-              </div>
-              <div class="barlow">
-                  <p class="my-0">Email us at</p>
-                  <p class="footer-yellow">support@example.email</p>
-              </div>
-          </div>
-      </div>
-      <hr class="my-0" />
-      <div class="text-center py-3">
-          <small class="copyright">&copy; 2022 CargoTon. All Rights Reserved.</small>
-      </div>
-  </footer>
-  <div class="scroll-to-top">
-    <i class="bi bi-arrow-up-circle-fill yellow-color scroll-icon"></i>
-  </div>
-  </div>
-
-
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-      <script src="main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 </body>
 </html>

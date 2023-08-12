@@ -12,6 +12,7 @@ header {
 }
 a {
     text-decoration: none;
+    transition: color .5s ease-in-out;
 }
 a:hover {
     color: var(--white);

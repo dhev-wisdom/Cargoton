@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <title>Cargoton</title>
+    <link rel="icon" href="images/home_images/cargo_logo.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&family=Barlow:ital,wght@0,100;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -16,7 +17,7 @@
 <body  style="overflow-x: hidden;">
     <div class="animation-container">
         <div class="logo-animation">
-            <img src="images/home_images/cargo_logo.png" alt="Logo">
+            <img src="images/home_images/loader.gif" alt="Logo">
         </div>
     </div>
     <div class="page-contents">
@@ -29,7 +30,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
               <li class="nav-item dropdown hover-dropdown">
-                <a class="nav-link dropdown-toggle nav-link-home mb-3 mb-md-0 me-md-3" href="#" role="button">
+                <a class="nav-link dropdown-toggle nav-link-home mb-3 mb-md-0 me-md-3" href="" role="button">
                   Home
                 </a>
                 <ul class="dropdown-menu nav-sub-link-ul">
@@ -84,7 +85,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link nav-link-btn mb-3 mb-md-0 me-md-3" href="#">Get A Quote</a>
+                <a class="nav-link nav-link-btn mb-3 mb-md-0 me-md-3" href="request-a-quote.html">Get A Quote</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link nav-link-btn-black" href="#">Sign In</a>
@@ -103,45 +104,48 @@
                 Amet, impedit tempora ing elit. repellendus animi inc ing elit. repellendus animi inc.</p>
             <button class="mybtn mt-4 mt-md-3">Discover More</button>
         </div>
-        <div class="col-md-7 append-paragraph-container">
+        <div class="col-md-7 append-paragraph-container div-max-width">
             <h3 class="header-append-paragraph">#Cargoton logistic</h3>
             <img src="images/home_images/header_truck.jpg" class="w-100 d-inline-block active-image" alt="">
         </div>
     </header>
 
-    <section class="pd-y-big p-x-custom d-flex-x-around bg-dark text-white mb-5">
-        <div class="_box text-center">
-            <span></span>
-            <h2 class="yellow-color mb-0 barlow fw-bold">XPRESS</h2>
-            <small class="small-italic negative-t-margin">Worldwide delivery.</small>
-        </div>
-        <div class="_box text-center">
-            <span></span>
-            <h2 class="yellow-color mb-0 barlow fw-bold">EXPRESS</h2>
-            <small class="small-italic negative-t-margin">Choose the right way.</small>
-        </div>
-        <div class="_box text-center">
-            <span></span>
-            <h2 class="yellow-color mb-0 barlow fw-bold">QUICKAIR</h2>
-            <small class="small-italic negative-t-margin">Worldwide delivery.</small>
-        </div>
-        <div class="_box text-center">
-            <span></span>
-            <h2 class="yellow-color mb-0 barlow fw-bold">Express</h2>
-            <small class="small-italic negative-t-margin">Choose the right way.</small>
-        </div>
-        <div class="_box text-center">
-            <span></span>
-            <h2 class="yellow-color mb-0 barlow fw-bold">express</h2>
-            <small class="small-italic negative-t-margin">delivery.</small>
-        </div>
+    <section class="pd-y p-x-custom d-flex-x-around bg-dark text-white mb-5 carousel slide"
+    id="carouselExampleSlidesOnly" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active _box text-center">
+                    <i class="bi bi-battery-charging express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">XPRESS</h2>
+                    <small class="small-italic negative-t-margin">Worldwide delivery.</small>
+                </div>
+                <div class="carousel-item _box text-center">
+                    <i class="bi bi-rocket-takeoff-fill express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">EXPRESS</h2>
+                    <small class="small-italic negative-t-margin">Choose the right way.</small>
+                </div>
+                <div class="carousel-item _box text-center">
+                    <i class="bi bi-airplane-engines-fill express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">QUICKAIR</h2>
+                    <small class="small-italic negative-t-margin">Worldwide delivery.</small>
+                </div>
+                <div class="carousel-item _box text-center">
+                    <i class="bi bi-truck express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">Express</h2>
+                    <small class="small-italic negative-t-margin">Choose the right way.</small>
+                </div>
+                <div class="carousel-item _box text-center">
+                    <i class="bi bi-house-check-fill express-icon"></i>
+                    <h2 class="yellow-color mb-0 barlow fw-bold mt-0">express</h2>
+                    <small class="small-italic negative-t-margin">delivery.</small>
+                </div>
+            </div>
     </section>
 
     <section class="d-flex-column p-x-custom margin-y" id="section-2">
         <h2 class="append-head-smaller mb-0">Services</h2>
         <h1 class="head mt-1 mb-0 mb-md-4 center-on-small">Get The <span class="yellow-color mb-4">Best Services</span></h1>
         <div class="row gx-0 gx-md-5 gy-5 mx-0 mt-1">
-            <div class="col-md-3 box d-flex-column">
+            <div class="col-md-3 box d-flex-column" id="freight">
                 <div class="freight-img-div d-flex">
                     <span class="num">01</span>
                     <img src="images/home_images/air_freight01.svg" alt="" class="freight-img" />
@@ -149,7 +153,7 @@
                 <h2 class="freight-head">Air Freight</h2>
                 <i class="bi bi-arrow-right arrow-right"></i>
             </div>
-            <div class="col-md-3 box d-flex-column">
+            <div class="col-md-3 box d-flex-column" id="freight">
                 <div class="freight-img-div d-flex">
                     <span class="num">02</span>
                     <img src="images/home_images/sea_frieght02.svg" alt="" class="freight-img" />
@@ -157,7 +161,7 @@
                 <h2 class="freight-head">Sea Freight</h2>
                 <i class="bi bi-arrow-right arrow-right"></i>
             </div>
-            <div class="col-md-3 box d-flex-column">
+            <div class="col-md-3 box d-flex-column" id="freight">
                 <div class="freight-img-div d-flex">
                     <span class="num">03</span>
                     <img src="images/home_images/ground_freight03.svg" alt="" class="freight-img" />
@@ -165,7 +169,7 @@
                 <h2 class="freight-head">Ground Freight</h2>
                 <i class="bi bi-arrow-right arrow-right"></i>
             </div>
-            <div class="col-md-3 box d-flex-column">
+            <div class="col-md-3 box d-flex-column" id="freight">
                 <div class="freight-img-div d-flex">
                     <span class="num">04</span>
                     <img src="images/home_images/track_and_trace04.svg" alt="" class="freight-img" />
@@ -173,7 +177,7 @@
                 <h2 class="freight-head">Track &#038; Trace</h2>
                 <i class="bi bi-arrow-right arrow-right"></i>
             </div>
-            <div class="col-md-3 box d-flex-column">
+            <div class="col-md-3 box d-flex-column" id="freight">
                 <div class="freight-img-div d-flex">
                     <span class="num">05</span>
                     <img src="images/home_images/warehousing.svg" alt="" class="freight-img" />
@@ -181,7 +185,7 @@
                 <h2 class="freight-head">Ware-Housing</h2>
                 <i class="bi bi-arrow-right arrow-right"></i>
             </div>
-            <div class="col-md-3 box d-flex-column">
+            <div class="col-md-3 box d-flex-column" id="freight">
                 <div class="freight-img-div d-flex">
                     <span class="num">06</span>
                     <img src="images/home_images/project_logistics.svg" alt="" class="freight-img" />
@@ -189,7 +193,7 @@
                 <h2 class="freight-head">Project Logistics</h2>
                 <i class="bi bi-arrow-right arrow-right"></i>
             </div>
-            <div class="col-md-3 box d-flex-column">
+            <div class="col-md-3 box d-flex-column" id="freight">
                 <div class="freight-img-div d-flex">
                     <span class="num">07</span>
                     <img src="images/home_images/courier_shipping.svg" alt="" class="freight-img" />
@@ -197,7 +201,7 @@
                 <h2 class="freight-head">Courier Shipping</h2>
                 <i class="bi bi-arrow-right arrow-right"></i>
             </div>
-            <div class="col-md-3 box d-flex-column">
+            <div class="col-md-3 box d-flex-column" id="freight">
                 <div class="freight-img-div d-flex">
                     <span class="num">08</span>
                     <img src="images/home_images/drone_freight08.svg" alt="" class="freight-img" />
@@ -211,7 +215,7 @@
     <section class="pd-y p-x-custom row not-white margin-y gx-4" id="section-3" style="overflow-x: hidden;">
         <div class="col-md-3 d-flex-column box25 yellow-background">
             <h1 class="text-white font25 mb-2 barlow">25+</h1>
-            <h2>Years of Experience</h2>
+            <h2 class="text-center">Years of Experience</h2>
         </div>
         <div class="col-md-9">
             <h2 class="append-head-smaller">About Us</h2>
@@ -322,7 +326,7 @@
                             <h3 class="global_service barlow">Domestic service</h3>
                         </div>
                         <div class="">
-                            <i class="bi bi-globe global-icon"></i>
+                            <i class="bi bi-bounding-box global-icon"></i>
                         </div>
                     </div>
                 </div>
@@ -347,7 +351,7 @@
                             <h3 class="global_service barlow">Domestic services</h3>
                         </div>
                         <div class="">
-                            <i class="bi bi-globe global-icon"></i>
+                            <i class="bi bi-box global-icon"></i>
                         </div>
                     </div>
                 </div>
@@ -373,18 +377,18 @@
             <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque distinctio animi vero minus temporibus autem 
                 quasi, dignissimos ipsa iure?</p>
         </div>
-        <div class="acheive-child achivement-flex mt-2 mt-md-0">
+        <div class="acheive-child achivement-flex mt-2 mt-md-0" id="counter-section">
             <div class="acheive-child d-flex-column mb-3 mb-md-0">
-                <i class="bi bi-award-fill global-icon"></i>
+                <i class="bi bi-cash-coin global-icon"></i>
                 <div class="co-div d-flex-column mt-2">
-                    <h3 class="yellow-color barlow mb-3">90+</h3>
+                    <h3 class="yellow-color barlow mb-3" id="counter1" data-count="90">0+</h3>
                     <h4 class="">Companies</h4>
                 </div>
             </div>
             <div class="acheive-child d-flex-column">
                 <i class="bi bi-award-fill global-icon"></i>
                 <div class="co-div d-flex-column mt-2">
-                    <h3 class="yellow-color barlow mb-3">8+</h3>
+                    <h3 class="yellow-color barlow mb-3" id="counter2" data-count="8">0+</h3>
                     <h4 class="">Countries</h4>
                 </div>
             </div>
