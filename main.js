@@ -77,11 +77,13 @@ $(document).ready(() => {
         else change = true;
         screen = "small";
         if (change === true && screen === "small") setupCardSlider();
+        // setupCardSlider();
       } else {
         if (screen === "big") change = false;
         else change = true;
         screen = "big";
         if (change === true && screen === "big") reverseSlideEffect();
+        // reverseSlideEffect();
       }
   });
 

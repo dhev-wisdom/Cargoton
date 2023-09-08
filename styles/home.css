@@ -76,7 +76,7 @@ body {
     padding: 2rem 3rem;
     text-align: center;
     transform: translate(-50%, -50%);
-    animation: moveLogo 6s linear infinite;
+    /* animation: moveLogo 6s linear infinite; */
   }
   @keyframes moveLogo {
     0%, 100% {
@@ -387,14 +387,19 @@ select {
     color: var(--yellow);
     font-weight: 600;
 }
+.yellow-header {
+    color: var(--yellow);
+    font-weight: 800;
+}
 .yellow-background {
     background-color: var(--luminous-vivid-amber);
 }
 .pronounced {
-    font-size: 4.5rem;
+    font-size: 4.8rem;
     text-transform: capitalize;
     letter-spacing: 1.5px;
     line-height: 1.1;
+    font-weight: 600;
 }
 .mybtn {
   position: relative;
@@ -959,9 +964,9 @@ small .copyright {
         padding-left: 10px;
     }
     .pronounced {
-        font-size: 3rem;
+        font-size: 3.2rem;
         line-height: 1.2;
-        font-weight: 400;
+        font-weight: 600;
         letter-spacing: 0;
     }
     .freight-img-div {
