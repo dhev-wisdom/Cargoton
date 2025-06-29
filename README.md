@@ -33,6 +33,7 @@ You don't need any server setup or dependencies to run this project. It's as sim
 
 ```bash
 git clone https://github.com/dhev-wisdom/Cargoton.git
+```
 
 2. **Open project**
 
